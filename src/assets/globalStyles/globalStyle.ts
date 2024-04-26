@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 :root {
-
+    --borderColor: rgba(0, 0, 0, 0.1);
+    --zyColor: #323366;
 }
 * {
     box-sizing: border-box;
@@ -36,10 +37,15 @@ body {
     height: auto;
     min-width: 150px;
     flex-direction: column;
-    border-bottom: 6px solid #323366 !important;
+    border-bottom: 6px solid var(--zyColor) !important;
     border-radius: 4px;
     padding: 1rem;
     box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 img {
     max-height: 250px;

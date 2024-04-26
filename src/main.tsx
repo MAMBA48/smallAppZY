@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import HomePage from './pages/home/index.tsx'
 import GlobalStyles from './assets/globalStyles/globalStyle';
+import Login from './pages/login/login.tsx'
 
 const router = createBrowserRouter([
   {
@@ -11,7 +12,8 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: '',
     children: [
-      { path: '/', element: <HomePage />}//pagina inicial
+      { path: '/', element: <HomePage /> }, //pagina inicial
+      { path: '/login', element: <Login /> }
     ]
   }
 ])

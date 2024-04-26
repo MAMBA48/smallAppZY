@@ -1,8 +1,7 @@
-import Header from "../../components/header/Header"
 import { v4 as uuid } from 'uuid'
 import axios from "axios" 
 import { useEffect, useState } from "react"
-import ButtonModel from "../../components/button/buttonModel"
+import { ButtonModel } from "../../components/button/buttonModel"
 
 const id = uuid()
 
@@ -37,8 +36,7 @@ const HomePage = () => {
     }, [])
 
     return (
-        <main className="container">
-            <Header />
+        <>
             <section className='general-content'>
             {box.map(item => (
                 <div key={item.id} className="default-div">
@@ -66,7 +64,7 @@ const HomePage = () => {
                 <div className="default-div">
                     <h2>box-4</h2>
                 </div> */}
-        </main>
+        </>
     )
 }
 

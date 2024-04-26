@@ -25,18 +25,16 @@ const Button = styled.button`
     color: #fff;
 `
 
-const ButtonModel = (props: Props) => {
+export const ButtonModel = (props: Props) => {
 
     const [isWorking, setWorking] = useState(true)
     const changeStatus = () => {
         setWorking(!isWorking)
     }
 
-    return(
+    return (
         <Button className="btn-model-style" id="btn-model" onClick={changeStatus}>
             {props.children}
         </Button>
     )
 }
-
-export default ButtonModel
