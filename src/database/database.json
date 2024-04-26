@@ -1,0 +1,34 @@
+{
+    "acessApi": [
+        {
+            "users": [
+                {
+                    "_id": 1,
+                    "user_name": "George Roussel",
+                    "email": "example@zapyou.com"
+                },
+                {
+                    "_id": 2,
+                    "user_name": "Relampago Marcão",
+                    "email": "newemail@zapyou.com"
+                }
+            ]
+        },
+        {
+            "accounts": [
+                {
+                    "_id": 1,
+                    "user_number_account": 1521548,
+                    "final_number": 2,
+                    "type_account": "Professional"
+                },
+                {
+                    "_id": 2,
+                    "user_number_account": 5481521,
+                    "final_number": 4,
+                    "type_account": "Student"
+                }
+            ]
+        }
+]
+}
