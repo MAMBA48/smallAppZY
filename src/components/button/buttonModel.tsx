@@ -1,4 +1,3 @@
-import { useState } from "react"
 import styled from "styled-components"
 
 export interface Props {
@@ -25,14 +24,10 @@ const Button = styled.button`
     color: #fff;
 `
 
-interface func {
-    handleClick: () => void
-}
-
-export const ButtonModel = (props: Props, {handleClick}:func) => {
+export const ButtonModel = (props: Props) => {
 
     return (
-        <Button className="btn-model-style" id="btn-model" onClick={handleClick}>
+        <Button className="btn-model-style" id="btn-model" onClick={props.event}>
             {props.children}
         </Button>
     )

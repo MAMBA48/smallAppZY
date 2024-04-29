@@ -10,10 +10,6 @@ interface PropsFunction {
 const Login = ({onClick}: PropsFunction) => {
     //const [email, setEmail] = useState('')
     //const [password, setPassword] = useState('')
-    
-    const handleClick = () => {
-        alert('FUNCIONOU A PROPS')
-    }
 
     const requestLogin = async () => {
         const res = await axios.get('http://localhost.com/4813/login')
@@ -23,6 +19,8 @@ const Login = ({onClick}: PropsFunction) => {
     useEffect(() => {
         requestLogin()
     },[])
+
+    const teste = ():void => alert('boooooom')
 
     return (
         <main className="container">
@@ -39,7 +37,9 @@ const Login = ({onClick}: PropsFunction) => {
                                 <input type="password" name="password" id="" required/>
                             </label>
                         </section>
-                    <ButtonModel onClick={()=>{}}>Entrar</ButtonModel>
+                        
+                        <p>//**CORRIGIR ERRO DE TYPESCRIPT */</p>
+                    <ButtonModel event={teste}>Entrar</ButtonModel>
                 </LoginForm>
             </section>
         </main>
