@@ -1,9 +1,8 @@
-import { v4 as uuid } from 'uuid'
 import axios from "axios" 
 import { useEffect, useState } from "react"
 import { ButtonModel } from "../../components/button/buttonModel"
 
-const id = uuid()
+const id = 0
 
 //console.log(id)
 

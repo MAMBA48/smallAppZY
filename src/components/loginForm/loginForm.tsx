@@ -49,12 +49,14 @@ const Section = styled.section`
 interface Props {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     children: any
+    onClick: () => void
 }
 
 const LoginForm = (props: Props) => {
 
+    {/**depois acrescentar o metodo POST no forms */}
     return (
-        <Form action="/log">
+        <Form action="/login" method="">
             <Section>
                     {props.children}
             </Section>

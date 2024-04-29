@@ -25,15 +25,14 @@ const Button = styled.button`
     color: #fff;
 `
 
-export const ButtonModel = (props: Props) => {
+interface func {
+    handleClick: () => void
+}
 
-    const [isWorking, setWorking] = useState(true)
-    const changeStatus = () => {
-        setWorking(!isWorking)
-    }
+export const ButtonModel = (props: Props, {handleClick}:func) => {
 
     return (
-        <Button className="btn-model-style" id="btn-model" onClick={changeStatus}>
+        <Button className="btn-model-style" id="btn-model" onClick={handleClick}>
             {props.children}
         </Button>
     )
